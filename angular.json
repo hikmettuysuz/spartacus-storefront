@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "deneme"
+    }
+  },
+  "defaultProject": "deneme",
+  "cli": {
+    "analytics": "f9680cc0-6a63-4268-8b4e-d5593e7585d4"
+  }
 }
