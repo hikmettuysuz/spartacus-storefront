@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ActiveCartService, GlobalMessageService, GlobalMessageType } from '@spartacus/core';
 import { AddToCartComponent, ModalService, CurrentProductService } from '@spartacus/storefront';
+import { MagrabiActiveCartServiceService } from 'src/app/magrabi-active-cart-service.service';
 
 @Component({
   selector: 'app-magrabi-product-to-cart',
@@ -15,7 +16,8 @@ export class MagrabiProductToCartComponent extends AddToCartComponent {
     cd: ChangeDetectorRef,
     currentProductService: CurrentProductService,
     modalService: ModalService,
-    private globalMessageService: GlobalMessageService
+    private globalMessageService: GlobalMessageService,
+    private magrabiCartService: MagrabiActiveCartServiceService
   ) {
     super(modalService, currentProductService, cd, cartService );
   }
@@ -25,6 +27,7 @@ export class MagrabiProductToCartComponent extends AddToCartComponent {
       return;
     }
 
+   // this.magrabiCartService.addEntryProduct();
     this.activeCartService
       .getEntry(this.productCode)
       .subscribe((entry) => {

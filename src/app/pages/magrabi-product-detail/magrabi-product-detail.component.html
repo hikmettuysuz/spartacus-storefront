@@ -1,6 +1,28 @@
-<app-magrabi-product-to-cart
-*ngIf="product$ | async as product"
-[product]="product"
->
 
-</app-magrabi-product-to-cart>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-7">
+                    <app-magrabi-product-images></app-magrabi-product-images>
+                    <ng-container
+                    [cxComponentWrapper]="productImagesComponent"
+                    ></ng-container>
+                </div>
+                <div class="col-5">
+
+                  <app-magrabi-product-intro></app-magrabi-product-intro>
+                    <app-magrabi-product-to-cart
+                    *ngIf="product$ | async as product"
+                    [product]="product"
+                    >
+                    
+                    </app-magrabi-product-to-cart>
+                    <app-magrabi-product-tabs></app-magrabi-product-tabs>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

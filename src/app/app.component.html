@@ -1,3 +1,4 @@
+
 <ng-template cxOutlet="cx-storefront">
     <ng-template cxOutlet="cx-header">
       <header
@@ -20,7 +21,7 @@
   
     <ng-template cxOutlet="cx-footer">
       <footer cxSkipLink="cx-footer" [cxFocus]="{ disableMouseFocus: true }">
-        <cx-page-slot position="MagrabiFooterSlot"></cx-page-slot> // Statik Footer 
+        <!-- <cx-page-slot position="MagrabiFooterSlot"></cx-page-slot> // Statik Footer  -->
         <ng-container [cxComponentWrapper]="footerComponent"></ng-container>  // Extended Footer
 
       </footer>

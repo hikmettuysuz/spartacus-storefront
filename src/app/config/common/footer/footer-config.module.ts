@@ -15,8 +15,8 @@ import { MagrabiFooterModule } from 'src/app/components/footer/magrabi-footer/ma
         ConfigModule.withConfig({
             layoutSlots: {
                 footer: {
-                   // slots: ['Footer'],
-                   slots: ['MagrabiFooterSlot']
+                   slots: ['Footer'],
+                  // slots: ['MagrabiFooterSlot']
                   },
             }
         }as LayoutConfig),
@@ -26,9 +26,9 @@ import { MagrabiFooterModule } from 'src/app/components/footer/magrabi-footer/ma
                 FooterNavigationComponent: {
                     component: MagrabiFooterComponent
                 },
-                MagrabiFooterComponent: {
-                  component: MagrabiFooterComponent
-              }
+              //   MagrabiFooterComponent: {
+              //     component: MagrabiFooterComponent
+              // }
             }
         } as CmsConfig),
 

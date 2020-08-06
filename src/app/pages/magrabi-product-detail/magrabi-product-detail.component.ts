@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CurrentProductService, BreakpointService } from '@spartacus/storefront';
 import { Observable } from 'rxjs';
-import { Product } from '@spartacus/core';
+import { Product, ContentSlotComponentData } from '@spartacus/core';
 
 @Component({
   selector: 'app-magrabi-product-detail',
@@ -17,5 +17,11 @@ export class MagrabiProductDetailComponent {
     this.product$ = this.currentProductService.getProduct();
 
   }
+
+  public productImagesComponent: ContentSlotComponentData = {
+    uid: 'ProductImagesComponent',
+    typeCode: 'ProductImagesComponent',
+    flexType: 'ProductImagesComponent',
+  };
 
 }

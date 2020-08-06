@@ -4,6 +4,7 @@ import { CmsStructureConfig, ContentSlotComponentData, CmsConfig, ConfigModule, 
 import { LayoutConfig } from '@spartacus/storefront';
 import { MagrabiProductDetailModule } from 'src/app/pages/magrabi-product-detail/magrabi-product-detail.module';
 import { MagrabiProductDetailComponent } from 'src/app/pages/magrabi-product-detail/magrabi-product-detail.component';
+import { MagrabiProductImagesComponent } from 'src/app/pages/magrabi-product-detail/magrabi-product-images/magrabi-product-images.component';
 
 
 
@@ -25,9 +26,9 @@ import { MagrabiProductDetailComponent } from 'src/app/pages/magrabi-product-det
         MagrabiProductDetailsComponent: {
           component: MagrabiProductDetailComponent,
         },
-        // CMSTabParagraphContainer: {
-        //   component: DvntProductTabsComponent,
-        // },
+        ProductImagesComponent: {
+           component: MagrabiProductImagesComponent,
+         },
         // ProductReferencesComponent: {
         //   component: DvntProductUpSellingReferencesComponent,
         // },

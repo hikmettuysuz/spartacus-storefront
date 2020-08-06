@@ -18,8 +18,10 @@ import { MagrabiAllConfigsModule } from './config/magrabi-all-config.module';
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://api.c39j2-walkersde1-d4-public.model-t.cc.commerce.ondemand.com',
-          prefix: '/rest/v2/'
+       //   baseUrl: 'https://api.c39j2-walkersde1-d4-public.model-t.cc.commerce.ondemand.com',
+        //  prefix: '/rest/v2/'
+           baseUrl: 'https://localhost:9002',
+           prefix: '/occ/v2/'
         }
       },
       context: {
