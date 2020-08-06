@@ -17,7 +17,6 @@ import { StorefrontMissingExportsModule } from 'src/app/storefront-missing-expor
     MagrabiProductImagesComponent,
     MagrabiProductIntroComponent,
     MagrabiProductTabsComponent,
-    
     ],
   imports: [
     CommonModule,
